@@ -1,0 +1,311 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #f0f0f0 0%, #fff 30%, #fff 70%, #f0f0f0 100%);
+}
+
+header {
+    background-color: #343a40; 
+    color: white;
+    padding: 0; 
+    width: 100%;
+    border-radius: 0;
+    margin-bottom: 1.5rem;
+}
+
+.navbar {
+    background-color: #343a40; 
+    padding: 0.5rem 1rem;
+    border-radius: 0;
+    margin: 0;
+    width: 100%; 
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.navbar-brand {
+    margin-right: 1rem;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler-icon {
+    background-color: white;
+}
+
+.navbar-collapse {
+    flex-grow: 1;
+    /*align-items: flex-start;*/
+}
+
+.navbar-nav {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+}
+
+.nav-item {
+    margin-left: 0.5rem;
+}
+
+.nav-link {
+    color: #eee;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: transparent;
+    padding: 0.5rem 1rem;
+    border: 1px solid #555;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: #555;
+    border-color: #777;
+}
+
+.nav-link:focus {
+    outline: none;
+    background-color: #555;
+    border-color: #777;
+}
+
+main {
+    width: 100%;
+    max-width: 1000px;
+    margin: 2rem auto;
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main.container {
+    background-color: #f8f9fa; 
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05); 
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+main h2 {
+    color: #333;
+    margin-bottom: 1.5rem;
+    text-align: center; 
+    font-size: 2rem; 
+}
+
+main ul.list-group {
+    border: 1px solid #dee2e6; 
+    border-radius: 4px;
+}
+
+main li.list-group-item {
+    padding: 1rem 1.5rem;
+    border-left: none;
+    border-right: none;
+}
+
+main li.list-group-item:first-child {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+main li.list-group-item:last-child {
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-bottom: none; 
+}
+
+main li.list-group-item b {
+    font-size: 1.1rem; 
+    color: #4b4b4b; 
+}
+
+/* Estilos para las sub-listas en avisos.html */
+main ul.list-group-flush {
+    margin-top: 0.5rem;
+    padding-left: 1.5rem; 
+}
+
+main ul.list-group-flush li.list-group-item {
+    border: none; 
+    padding: 0.5rem 0;
+    background-color: transparent; 
+    color: #555; 
+    list-style-type: disc; 
+}
+/* Tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    background-color: white;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #555;
+    color: white;
+    padding: 0.75rem;
+    text-align: left;
+}
+
+table td {
+    border: 1px solid #ddd;
+    padding: 0.75rem;
+    text-align: left;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+footer {
+    background-color: #000000; 
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: auto;
+    width: 100%;
+    border-radius: 0;
+}
+
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.profile-image {
+    width: 150px; 
+    height: 150px; 
+    margin-bottom: 1.5rem;
+    border: 5px solid #e9ecef;
+    border-radius: 0; 
+    object-fit: cover;
+}
+
+.profile-info p {
+    line-height: 1.8;
+    margin-bottom: 0.8rem;
+    color: #495057;
+    text-align: left; 
+}
+
+.profile-info b {
+    font-weight: bold;
+    color: #343a40;
+}
+
+.interests-section {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.interests-section h3 {
+    color: #333333;
+    margin-bottom: 1rem;
+}
+
+.interests-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.interests-list li {
+    background-color: #e9ecef;
+    color: #343a40;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+/* Estilos ajustados formulario de contacto */
+.contact-form-container {
+    background-color: #f8f9fa;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05);
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.contact-form-container label {
+    display: block;
+    margin-bottom: 0.3rem;
+    font-weight: bold;
+    color: #343a40;
+}
+
+.contact-form-container .form-group {
+    margin-bottom: 1rem;
+}
+
+.contact-form-container input[type="text"],
+.contact-form-container input[type="email"] {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+.contact-form-container textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    resize: vertical;
+    margin-bottom: 1.5rem !important; 
+}
+
+.contact-form-container input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    margin-top: 1.5rem;
+}
+
+.contact-form-container input[type="submit"]:hover {
+    background-color: #0056b3;
+}
